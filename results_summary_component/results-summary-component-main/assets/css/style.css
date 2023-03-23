@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Media query for screens with a maximum width of 768px (mobile devices) */
+@media only screen and (max-width: 768px) {
+    /* CSS styles for mobile devices go here */
+}
+
+/* Media query for screens with a minimum width of 768px and a maximum width of 991px (tablets and small laptops) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS styles for tablets and small laptops go here */
+}
+
+/* Media query for screens with a minimum width of 992px and a maximum width of 1199px (larger laptops and desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* CSS styles for tablets and small laptops go here */
+}
+
+/* Media query for screens with a minimum width of 1200px and a maximum width of 1440px (larger laptops and desktops) */
+@media only screen and (min-width: 1200px)and (max-width: 1439px) {
+    /* CSS styles for larger laptops and desktops go here */
+
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .card {
+        width: 41%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .flex-container {
+        display: flex;
+        background-color: #feffff;
+        border-radius: 2rem;
+        box-shadow: 3px 3px 20px 1px #747676;
+        /* box-shadow: 0px 10px 50px 1px #565858; */
+    }
+
+    .flex-container>div:nth-child(1) {
+        width: 50%;
+        height: 400px;
+        border-radius: 2rem;
+        /* background: rgb(50, 46, 220); */
+        background: linear-gradient(0deg, rgba(50, 46, 220, 1) 0%, rgba(103, 66, 251, 1) 100%);
+    }
+
+    .flex-container:nth-child(2) {
+        width: 100%;
+        background: #feffff;
+        /* display: flex;
+        flex-direction: column;
+        align-content: center; */
+    }
+
+
+    .left-board {
+        color: white;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-board h2 {
+        color: white;
+        letter-spacing: 1px;
+        display: flex;
+        align-self: center;
+    }
+
+    .left-board p {
+        padding: 0 40px;
+        text-align: center;
+        color: white;
+
+        font-size: .8rem;
+        letter-spacing: 1px;
+        align-self: center;
+
+    }
+
+    .left-board div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scoreTitle {
+        width: 100%;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+
+    .circle {
+        margin-top: 1rem;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: linear-gradient(0deg, rgb(84, 46, 237) 0%, rgb(28, 25, 201) 100%);
+
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .circle h1 {
+        margin: 0;
+        color: white;
+        font-size: 2.6rem;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .circle p {
+        /* display: block; */
+        margin: 0;
+        color: white;
+        font-size: .8rem;
+        opacity: .5;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .summary {
+        width: 50%;
+        display: flex;
+
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .summary>h5 {
+        margin-left: 15px;
+        letter-spacing: 1px;
+    }
+
+}
+
+/* Media query for screens with a minimum width of 1440px (larger screens) */
+@media only screen and (min-width: 1440px) {
+    /* CSS styles for larger screens go here */
+
+
+
+}
