@@ -1,8 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+:root {
+    --card-background: linear-gradient(0deg, rgba(50, 46, 220, 1) 0%, rgba(103, 66, 251, 1) 100%);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-board {
+    max-width: 100%;
+    background: var(--card-background);
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 3px 3px 20px 1px #747676;
+    display: flex;
+    flex-direction: column;
+}
+
+.blue-board-title {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+
+.circle {
+    margin: 2rem 0;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgb(84, 46, 237) 0%, rgb(28, 25, 201) 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.circle h1 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 1.5rem;
+}
+
+.circle p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #fff;
+    opacity: .5;
+    align-self: center;
+}
+
+.blue-board h2 {
+    color: #fff;
+    display: flex;
+    align-self: center;
+}
+
+.blue-board>p {
+    color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem 2rem;
+
+}
+
+.summaryCard {
+    display: flex;
+    flex-direction: row;
+    border-radius: .4rem;
+    padding: .5rem .9rem;
+    margin: .5rem;
+}
+
+#reaction{
+    /* background-color: #fff6f5; */
+    background-color: #fff6f5;
+    border-radius: .4rem;
+}
+
+#memory{
+    /* background-color: #fff6f5; */
+    background-color: #fffbf2;
+    border-radius: .4rem;
+}
+#verbal{
+    /* background-color: #fff6f5; */
+    background-color: #f2fbfa;
+    border-radius: .4rem;
+}
+
+#visual{
+    /* background-color: #fff6f5; */
+    background-color: #f3f3fd;
+    border-radius: .4rem;
+}
+
+.sumCardLeft {
+    width: 50%;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.sumCardRight {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.scored {
+    font-weight: bold;
+}
+
+.total {
+    opacity: .5;
+}
+
 /* Media query for screens with a maximum width of 768px (mobile devices) */
 @media only screen and (max-width: 768px) {
     /* CSS styles for mobile devices go here */
+
 }
 
 /* Media query for screens with a minimum width of 768px and a maximum width of 991px (tablets and small laptops) */
@@ -15,6 +167,8 @@
     /* CSS styles for tablets and small laptops go here */
 }
 
+
+
 /* Media query for screens with a minimum width of 1200px and a maximum width of 1440px (larger laptops and desktops) */
 @media only screen and (min-width: 1200px)and (max-width: 1439px) {
     /* CSS styles for larger laptops and desktops go here */
@@ -23,11 +177,18 @@
         font-family: 'Roboto', sans-serif;
     }
 
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
     .card {
         width: 41%;
         margin: 0 auto;
-        padding-bottom: 50px;
+        padding: 5rem 0;
     }
+
 
     .flex-container {
         display: flex;
@@ -42,7 +203,8 @@
         height: 400px;
         border-radius: 2rem;
         /* background: rgb(50, 46, 220); */
-        background: linear-gradient(0deg, rgba(50, 46, 220, 1) 0%, rgba(103, 66, 251, 1) 100%);
+        /* background: linear-gradient(0deg, rgba(50, 46, 220, 1) 0%, rgba(103, 66, 251, 1) 100%); */
+        background-color: var(--card-background);
     }
 
     .flex-container:nth-child(2) {
@@ -54,21 +216,21 @@
     }
 
 
-    .left-board {
+    .blue-board {
         color: white;
         letter-spacing: 1px;
         display: flex;
         flex-direction: column;
     }
 
-    .left-board h2 {
+    .blue-board h2 {
         color: white;
         letter-spacing: 1px;
         display: flex;
         align-self: center;
     }
 
-    .left-board p {
+    .blue-board p {
         padding: 0 40px;
         text-align: center;
         color: white;
@@ -79,14 +241,13 @@
 
     }
 
-    .left-board div {
+    .blue-board div {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     .scoreTitle {
-        font-size: 1rem;
         width: 100%;
         display: flex;
         /* align-items: center; */
@@ -133,54 +294,16 @@
     .summary {
         width: 50%;
         display: flex;
-        flex-direction: column;
+
         /* align-items: center; */
         /* justify-content: center; */
     }
 
     .summary>h5 {
-        font-size: 1rem;
         margin-left: 15px;
         letter-spacing: 1px;
     }
 
-
-    /* Summary side - the right pane - white panel */
-    .summaryCard {
-        display: flex;
-        padding: .8rem;
-        /* margin-top: 1rem; */
-        max-height: 50px;
-        flex-direction: row;
-
-    }
-    .summary-card-icon{
-        font-size: 10px;
-        display: flex;
-        align-items: center;
-    }
-    .summaryCard p{
-        margin: 0;
-        display: flex;
-        align-items: center;
-        font-size: .8rem;
-    }
-    .sumCardLeft{
-        display: flex;
-        flex-direction: row;
-    }
-    .right{
-        margin-left: auto;
-    }
-
-    .summaryCard span{
-        /* margin: 0; */
-        display: flex;
-
-        margin-left: 6rem;
-        align-items: center;
-        font-size: .8rem;
-    }
 }
 
 /* Media query for screens with a minimum width of 1440px (larger screens) */
