@@ -11,16 +11,21 @@
     margin: 0;
 }
 
-.card {
-    width: 100%;
-}
-@media only screen and (max-width: 289px) {
+
+@media only screen and (max-width: 290px) {
     /* CSS styles for smart watch goes here */
+
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .flex-container {
         display: flex;
         flex-direction: column;
     }
-    
+
     .blue-board {
         max-width: 100%;
         background: var(--card-background);
@@ -29,7 +34,7 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     .blue-board-title {
         width: 100%;
         display: flex;
@@ -39,20 +44,20 @@
         color: #fff;
         opacity: .9;
     }
-    
-    
+
+
     .circle {
         margin: 2rem 0;
         width: 8.5rem;
         height: 8.5rem;
         border-radius: 50%;
         background: linear-gradient(0deg, rgb(84, 46, 237) 0%, rgb(28, 25, 201) 100%);
-    
+
         display: flex;
         flex-direction: column;
         align-self: center;
     }
-    
+
     .circle h1 {
         display: flex;
         align-self: center;
@@ -61,7 +66,7 @@
         font-size: 3.5rem;
         margin-top: 1.5rem;
     }
-    
+
     .circle p {
         margin: 0;
         padding: 0;
@@ -71,13 +76,13 @@
         opacity: .5;
         align-self: center;
     }
-    
+
     .blue-board h2 {
         color: #fff;
         display: flex;
         align-self: center;
     }
-    
+
     .blue-board>p {
         color: #fff;
         padding: 1rem 3rem;
@@ -85,18 +90,20 @@
         align-self: center;
         text-align: center;
     }
-    
+
     .summary {
         display: flex;
         flex-direction: column;
         max-width: 100%;
         padding: 1rem 2rem;
     }
-    .summary h5{
+
+    .summary h5 {
         padding: .5rem 1rem;
         font-size: 1rem;
         letter-spacing: 1px;
     }
+
     .summaryCard {
         display: flex;
         flex-direction: row;
@@ -104,56 +111,61 @@
         padding: .5rem .9rem;
         margin: .5rem;
     }
-    
+
     .sumCardLeft {
         width: 50%;
         /* display: flex;
         flex-direction: row;
         align-items: center; */
-        
+
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        
+
     }
-    
-    #reaction{
+
+    #reaction {
         background-color: #fff6f5;
         border-radius: .4rem;
         margin: .5rem 0;
     }
-    #reaction .sumCardLeft span{
+
+    #reaction .sumCardLeft span {
         display: none;
     }
-    
-    #memory{
+
+    #memory {
         background-color: #fffbf2;
         border-radius: .4rem;
         margin: .5rem 0;
     }
-    #memory .sumCardLeft span{
+
+    #memory .sumCardLeft span {
         display: none;
     }
-    
-    #verbal{
+
+    #verbal {
         background-color: #f2fbfa;
         border-radius: .4rem;
         margin: .5rem 0;
     }
-    #verbal .sumCardLeft span{
+
+    #verbal .sumCardLeft span {
         display: none;
     }
-    #visual{
+
+    #visual {
         background-color: #f3f3fd;
         border-radius: .4rem;
         margin: .5rem 0;
     }
-    #visual .sumCardLeft span{
+
+    #visual .sumCardLeft span {
         display: none;
 
     }
-    
+
     .sumCardRight {
         width: 50%;
         display: flex;
@@ -161,11 +173,11 @@
         justify-content: flex-end;
         align-items: center;
     }
-    
+
     .scored {
         font-weight: bold;
     }
-    
+
     .total {
         opacity: .5;
     }
@@ -174,11 +186,18 @@
 /* Media query for screens with a maximum width of 768px (mobile devices) */
 @media only screen and (min-width: 290px) and (max-width: 768px) {
     /* CSS styles for mobile devices go here */
+
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .flex-container {
         display: flex;
         flex-direction: column;
     }
-    
+
     .blue-board {
         max-width: 100%;
         background: var(--card-background);
@@ -187,7 +206,7 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     .blue-board-title {
         width: 100%;
         display: flex;
@@ -197,20 +216,20 @@
         color: #fff;
         opacity: .9;
     }
-    
-    
+
+
     .circle {
         margin: 2rem 0;
         width: 8.5rem;
         height: 8.5rem;
         border-radius: 50%;
         background: linear-gradient(0deg, rgb(84, 46, 237) 0%, rgb(28, 25, 201) 100%);
-    
+
         display: flex;
         flex-direction: column;
         align-self: center;
     }
-    
+
     .circle h1 {
         display: flex;
         align-self: center;
@@ -219,7 +238,7 @@
         font-size: 3.5rem;
         margin-top: 1.5rem;
     }
-    
+
     .circle p {
         margin: 0;
         padding: 0;
@@ -229,13 +248,13 @@
         opacity: .5;
         align-self: center;
     }
-    
+
     .blue-board h2 {
         color: #fff;
         display: flex;
         align-self: center;
     }
-    
+
     .blue-board>p {
         color: #fff;
         padding: 1rem 3rem;
@@ -243,18 +262,20 @@
         align-self: center;
         text-align: center;
     }
-    
+
     .summary {
         display: flex;
         flex-direction: column;
         max-width: 100%;
         padding: 1rem 2rem;
     }
-    .summary h5{
+
+    .summary h5 {
         padding: .5rem 1rem;
         font-size: 1rem;
         letter-spacing: 1px;
     }
+
     .summaryCard {
         display: flex;
         flex-direction: row;
@@ -262,63 +283,68 @@
         padding: .5rem .9rem;
         margin: .5rem;
     }
-    
+
     .sumCardLeft {
         width: 50%;
         /* display: flex;
         flex-direction: row;
         align-items: center; */
-        
+
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        
+
     }
-    
-    #reaction{
+
+    #reaction {
         background-color: #fff6f5;
         border-radius: .4rem;
         margin: .5rem 0;
     }
-    #reaction .sumCardLeft span{
-        color:#ff8d81; 
+
+    #reaction .sumCardLeft span {
+        color: #ff8d81;
         display: flex;
         justify-content: center;
     }
-    
-    #memory{
+
+    #memory {
         background-color: #fffbf2;
         border-radius: .4rem;
         margin: .5rem 0;
     }
-    #memory .sumCardLeft span{
-        color:#ffd981; 
+
+    #memory .sumCardLeft span {
+        color: #ffd981;
         display: flex;
         justify-content: center;
     }
-    
-    #verbal{
+
+    #verbal {
         background-color: #f2fbfa;
         border-radius: .4rem;
         margin: .5rem 0;
     }
-    #verbal .sumCardLeft span{
-        color:#80fff0; 
+
+    #verbal .sumCardLeft span {
+        color: #80fff0;
         display: flex;
         justify-content: center;
     }
-    #visual{
+
+    #visual {
         background-color: #f3f3fd;
         border-radius: .4rem;
         margin: .5rem 0;
     }
-    #visual .sumCardLeft span{
-        color:#8080ff; 
+
+    #visual .sumCardLeft span {
+        color: #8080ff;
         display: flex;
         justify-content: center;
     }
-    
+
     .sumCardRight {
         width: 50%;
         display: flex;
@@ -326,25 +352,149 @@
         justify-content: flex-end;
         align-items: center;
     }
-    
+
     .scored {
         font-weight: bold;
     }
-    
+
     .total {
         opacity: .5;
     }
-    
+
+    .btn {
+        display: flex;
+        width: 80%;
+        height: 3rem;
+        align-self: center;
+        justify-content: center;
+        border: none;
+        border-radius: 2rem;
+        background-color: #303b5a;
+        color: white;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background-color: #474b58;
+    }
+
 }
 
-/* Media query for screens with a minimum width of 768px and a maximum width of 991px (tablets and small laptops) */
+/* Media query for screens with a minimum width of 768px and a maximum width of 991px 
+   CSS styles for tablets and small laptops go here */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* CSS styles for tablets and small laptops go here */
+
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blue-board {
+        max-width: 100%;
+        background: var(--card-background);
+        border-radius: 2rem;
+        box-shadow: 3px 3px 20px 1px #747676;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .blue-board-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        color: #fff;
+        opacity: .9;
+    }
+
+    .circle {
+        margin: 2rem 0;
+        width: 8.5rem;
+        height: 8.5rem;
+        border-radius: 50%;
+        background: linear-gradient(0deg, rgb(84, 46, 237) 0%, rgb(28, 25, 201) 100%);
+
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .circle h1 {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        color: white;
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .circle p {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: bolder;
+        color: #fff;
+        opacity: .5;
+        align-self: center;
+    }
+
+    .blue-board h2 {
+        color: #fff;
+        display: flex;
+        align-self: center;
+    }
+
+    .blue-board>p {
+        color: #fff;
+        padding: 1rem 3rem;
+        display: flex;
+        align-self: center;
+        text-align: center;
+    }
+
+
+    .summary {
+        border: solid 1px red;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 85%;
+        align-self: center;
+        padding: 1rem 2rem;
+        margin: 2rem 0;
+    }
+
+    .summary h5 {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .summaryCard {
+        display: flex;
+        flex-direction: row;
+        border-radius: .4rem;
+        padding: .5rem .9rem;
+        margin: .5rem;
+    }
+
+
 }
 
 /* Media query for screens with a minimum width of 992px and a maximum width of 1199px (larger laptops and desktops) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     /* CSS styles for tablets and small laptops go here */
+
 }
 
 
