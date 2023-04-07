@@ -478,6 +478,7 @@
         padding: .5rem 1rem;
         font-size: 1rem;
         letter-spacing: 1px;
+        display: flex;
     }
 
     .summaryCard {
@@ -639,7 +640,163 @@
 /* Media query for screens with a minimum width of 1440px (larger screens) */
 @media only screen and (min-width: 1440px) {
     /* CSS styles for larger screens go here */
+/* 
+    * {
+        font-family: 'Roboto', sans-serif;
+    } */
 
+    .card {
+        width: 41%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .flex-container {
+        display: flex;
+        background-color: #feffff;
+        border-radius: 2rem;
+        box-shadow: 3px 3px 20px 1px #747676;
+        /* box-shadow: 0px 10px 50px 1px #565858; */
+    }
+
+    .flex-container>div:nth-child(1) {
+        width: 50%;
+        height: 400px;
+        border-radius: 2rem;
+        /* background: rgb(50, 46, 220); */
+        background: linear-gradient(0deg, rgba(50, 46, 220, 1) 0%, rgba(103, 66, 251, 1) 100%);
+    }
+
+    .flex-container:nth-child(2) {
+        width: 100%;
+        background: #feffff;
+        /* display: flex;
+        flex-direction: column;
+        align-content: center; */
+    }
+
+
+    .blue-board {
+        color: white;
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blue-board-title {
+        color: white;
+        letter-spacing: 1px;
+        display: flex;
+        align-self: center;
+    }
+
+    .blue-board p {
+        padding: 0 40px;
+        text-align: center;
+        color: white;
+
+        font-size: .8rem;
+        letter-spacing: 1px;
+        align-self: center;
+
+    }
+
+    .blue-board div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+
+    .circle {
+        margin-top: 1rem;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: linear-gradient(0deg, rgb(84, 46, 237) 0%, rgb(28, 25, 201) 100%);
+
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .circle h1 {
+        margin: 0;
+        color: white;
+        font-size: 2.6rem;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .circle p {
+        /* display: block; */
+        margin: 0;
+        color: white;
+        font-size: .8rem;
+        opacity: .5;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .summary {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .summary>h5 {
+        font-size: 1rem;
+        margin-left: 15px;
+        letter-spacing: 1px;
+    }
+
+
+    /* Summary side - the right pane - white panel */
+    .summaryCard {
+        display: flex;
+        padding: .8rem;
+        /* margin-top: 1rem; */
+        max-height: 50px;
+        flex-direction: row;
+
+    }
+    .summary-card-icon{
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .summaryCard p{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        font-size: .8rem;
+    }
+    .sumCardLeft{
+        display: flex;
+        flex-direction: row;
+    }
+    .right{
+        margin-left: auto;
+    }
+
+    .summaryCard span{
+        /* margin: 0; */
+        display: flex;
+
+        margin-left: 6rem;
+        align-items: center;
+        font-size: .8rem;
+    }
 
 
 }
